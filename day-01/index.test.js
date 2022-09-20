@@ -1,4 +1,4 @@
-const { reverseSentence, titleCase, oddEven, multiples, addPunctuation } = require('./index');
+const { reverseSentence, titleCase, oddEven, multiples, addPunctuation, addFirst } = require('./index');
 
 
 describe('primitive code challenges', () => {
@@ -28,6 +28,11 @@ describe('primitive code challenges', () => {
   describe('extra function', () => {
     it('should add punctuations', () => {
       expect(addPunctuation('!!!')('hello world')).toEqual('hello world!!!');
+    });
+  });
+  describe('rec02', () => {
+    it('add arrays', () => {
+      expect(addFirst('orange')(['red', 'blue', 'green'])).toEqual(['orange', 'red', 'blue', 'green']);
     });
   });
 });

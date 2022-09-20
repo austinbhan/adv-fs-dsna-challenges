@@ -44,6 +44,14 @@ function addPunctuation (str) {
   };
 }
 
+function addFirst (str) {
+  const newArr = [];
+  return function addToArr (arr) {
+    newArr.push(str, ...arr);
+    return newArr;
+  };
+}
 
 
-module.exports = { reverseSentence, titleCase, oddEven, multiples, addPunctuation };
+
+module.exports = { reverseSentence, titleCase, oddEven, multiples, addPunctuation, addFirst };
