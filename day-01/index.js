@@ -79,7 +79,22 @@ function anagram(wordOne, wordTwo) {
   }
 }
 
+function fizzBuzz(num) {
+  const res = [];
+
+  for (let i = 0; i <= num.length; i++) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+      return res.push('FizzBuzz');
+    } else if (i % 3 === 0) {
+      return res.push('Fizz');
+    } else if (i % 5 === 0) {
+      return res.push('Buzz');
+    } else res.push(i);
+  }
+
+}
+
 
 module.exports = { reverseSentence, titleCase, oddEven, 
   multiples, addPunctuation, addFirst, rootDigit, arrayValue,
-  anagram };
+  anagram, fizzBuzz };

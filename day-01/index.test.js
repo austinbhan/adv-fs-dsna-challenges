@@ -1,6 +1,6 @@
 const { reverseSentence, titleCase, oddEven, multiples, 
   addPunctuation, addFirst, rootDigit, arrayValue,
-  anagram } = require('./index');
+  anagram, fizzBuzz } = require('./index');
 
 
 describe('primitive code challenges', () => {
@@ -54,6 +54,14 @@ describe('primitive code challenges', () => {
     it('should return anagram', () => {
       expect(anagram('superintended', 'unpredestined')).toBe(true);
       expect(anagram('pictorialness', 'documentarily')).toBe(false);
+    });
+  });
+  describe('PRIM05', () => {
+    it('should return fizzbuzz array', () => {
+      expect(fizzBuzz('16')).toEqual([1, 2, 'Fizz', 4, 'Buzz', 
+        'Fizz', 7, 8, 'Fizz', 'Buzz', 
+        11, 'Fizz', 13, 14, 'FizzBuzz', 
+        16]);
     });
   });
 });
