@@ -63,7 +63,12 @@ function rootDigit(num) {
   return firstNum < 10 ? firstNum : rootDigit(firstNum);
 }
 
+function arrayValue(str, pos) {
+  const arr = str.toString().split('');
+  return parseInt(arr[pos]);
+}
+
 
 
 module.exports = { reverseSentence, titleCase, oddEven, 
-  multiples, addPunctuation, addFirst, rootDigit };
+  multiples, addPunctuation, addFirst, rootDigit, arrayValue };
