@@ -68,7 +68,18 @@ function arrayValue(str, pos) {
   return parseInt(arr[pos]);
 }
 
+function anagram(wordOne, wordTwo) {
+  const alphaOne = wordOne.split('').sort().join('');
+  const alphaTwo = wordTwo.split('').sort().join('');
+
+  if (alphaOne === alphaTwo) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 module.exports = { reverseSentence, titleCase, oddEven, 
-  multiples, addPunctuation, addFirst, rootDigit, arrayValue };
+  multiples, addPunctuation, addFirst, rootDigit, arrayValue,
+  anagram };

@@ -1,5 +1,6 @@
 const { reverseSentence, titleCase, oddEven, multiples, 
-  addPunctuation, addFirst, rootDigit, arrayValue } = require('./index');
+  addPunctuation, addFirst, rootDigit, arrayValue,
+  anagram } = require('./index');
 
 
 describe('primitive code challenges', () => {
@@ -47,6 +48,12 @@ describe('primitive code challenges', () => {
       expect(arrayValue(123456, 4)).toEqual(5);
       expect(arrayValue(1337, 2)).toEqual(3);
       expect(arrayValue(654321, 1)).toEqual(5);
+    });
+  });
+  describe('PRIM04', () => {
+    it('should return anagram', () => {
+      expect(anagram('superintended', 'unpredestined')).toBe(true);
+      expect(anagram('pictorialness', 'documentarily')).toBe(false);
     });
   });
 });
