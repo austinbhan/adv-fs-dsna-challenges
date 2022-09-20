@@ -28,7 +28,6 @@ function oddEven(str) {
   }
 }
 
-// Take a Number
 function multiples(n) {
   const multiples = [];
   for (let i = 1; i <= 50; i++) {
@@ -37,11 +36,14 @@ function multiples(n) {
     }
   }
   return multiples;
-  // Multiply by 1, then 2, etc 
-  // Add to output array
-  // If multiple <= 50, stop loop
+}
+
+function addPunctuation (str) {
+  return function addSomething(string) {
+    return string + str;
+  };
 }
 
 
 
-module.exports = { reverseSentence, titleCase, oddEven, multiples };
+module.exports = { reverseSentence, titleCase, oddEven, multiples, addPunctuation };
