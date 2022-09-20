@@ -1,4 +1,5 @@
-const { reverseSentence, titleCase, oddEven, multiples, addPunctuation, addFirst } = require('./index');
+const { reverseSentence, titleCase, oddEven, multiples, 
+  addPunctuation, addFirst, rootDigit } = require('./index');
 
 
 describe('primitive code challenges', () => {
@@ -33,6 +34,13 @@ describe('primitive code challenges', () => {
   describe('rec02', () => {
     it('add arrays', () => {
       expect(addFirst('orange')(['red', 'blue', 'green'])).toEqual(['orange', 'red', 'blue', 'green']);
+    });
+  });
+  describe('digit sum root', () => {
+    it('add value, then sum digits of result', () => {
+      expect(rootDigit(123)).toEqual(6);
+      expect(rootDigit(4322)).toEqual(2);
+      expect(rootDigit(999888777)).toEqual(9);
     });
   });
 });
