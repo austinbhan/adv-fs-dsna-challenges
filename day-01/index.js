@@ -82,16 +82,16 @@ function anagram(wordOne, wordTwo) {
 function fizzBuzz(num) {
   const res = [];
 
-  for (let i = 0; i <= num.length; i++) {
+  for (let i = 1; i <= num; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
-      return res.push('FizzBuzz');
+      res.push('FizzBuzz');
     } else if (i % 3 === 0) {
-      return res.push('Fizz');
+      res.push('Fizz');
     } else if (i % 5 === 0) {
-      return res.push('Buzz');
+      res.push('Buzz');
     } else res.push(i);
   }
-
+  return res;
 }
 
 
