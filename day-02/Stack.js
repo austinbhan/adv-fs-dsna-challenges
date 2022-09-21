@@ -17,7 +17,9 @@ class Stack {
     return this.list;
   }
 
-
+  peek() {
+    return this.list.at(-1);
+  }
 }
 
 module.exports = { Stack };

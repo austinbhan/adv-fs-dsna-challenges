@@ -11,4 +11,9 @@ describe('Stack Test', () => {
     testArray.pop();
     expect(testArray.list).toEqual([1, 2, 3]);
   });
+  it('Peek an item from an array', () => {
+    const testArray = new Stack([1, 2, 3, 4, 5]);
+    testArray.peek();
+    expect(testArray.peek()).toEqual(5);
+  });
 });
