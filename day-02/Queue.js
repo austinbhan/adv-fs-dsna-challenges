@@ -13,6 +13,13 @@ class Queue {
   dequeue() {
     this.list.shift();
   }
+  hasNext() {
+    if (this.list.length >= 1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 module.exports = { Queue };

@@ -11,5 +11,10 @@ describe('Stack Test', () => {
     myArray.dequeue();
     expect(myArray.list).toEqual(['Borat', 'Bruno']);
   });
+  it('HasNext verifies if there is a next', () => {
+    const myArray = new Queue(['AliG', 'Borat', 'Bruno']);
+    myArray.hasNext();
+    expect(myArray.hasNext()).toEqual(true);
+  });
 });
 
