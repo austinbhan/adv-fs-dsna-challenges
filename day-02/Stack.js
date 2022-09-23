@@ -12,9 +12,8 @@ class Stack {
     return this.list;
   }
 
-  pop(item) {
-    this.list.pop(item);
-    return this.list;
+  pop() {
+    return this.list.pop();
   }
 
   peek() {
